@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Check Out Page</title>
+  </head>
+
+  <body>
+    <!--header-->
+    <header>
+      <div>
+        <div>
+          <form action="#">
+          <button><img class="logo" src="img/logo.svg" alt="logo"/></button>
+          </form>
+          
+        </div>
+
+        <a href="#">about</a>
+        
+      </div>
+    </header>
+
+<!--cards-->
+<section>
+  <h4> Types of Cards:</h4>
+
+<label for="cards">Choose your card:</label>
+
+<select name="cards" id="cards">
+  <option value="select">Select></option>
+  <option value="visa">Visa</option>
+  <option value="credit">Credit</option>
+  <option value="maestro">Maestro</option>
+  <option value="mastercard">MasterCard</option>
+</select>
+
+<!--information-->
+
+<!--Name-->
+<div>
+<div>
+<h4>Name on card:</h4>
+
+<form action=“#”>
+  <input type="text" placeholder="FIRST LAST NAME">
+</form>
+</div>
+
+<!--Card number-->
+<div>
+  <h4>Card number:</h4>
+  
+  <form action=“#”>
+    <input type="text" placeholder="123-456-789-">
+  </form>
+</div>
+
+<!--Expry date-->
+<div>
+  <h4>Expry date:</h4>
+  
+  <form action=“#”>
+    <input type="text" placeholder="MM/YY">
+  </form>
+</div>
+
+<!--CCV-->
+<div>
+  <h4>CCV:</h4>
+  
+  <form action=“#”>
+    <input type="text" placeholder="***">
+  </form>
+</div>
+
+</div>
+</section>
+
+<section>
+  <div>
+      <!--Order summary-->
+    <h2>Order summary</h2>
+    <!--Pass 1-->
+  <div>
+  <h4>
+    2-DAY GA
+  </h4>
+  <p>Weekend 1</p>
+  <h4>
+    $300
+  </h4>
+
+  <label for="quantity">Quantity (1-10):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10">
+
+  <a href="#">Remove from cart</a>
+</div>
+   <!--Pass 2-->
+   <div>
+   <h4>
+    2-DAY SOUTH BAY SURF CLUB
+  </h4>
+  <p>Weekend 1</p>
+  <h4>
+    $300
+  </h4>
+  <label for="quantity1">Quantity (1-10):</label>
+  <input type="number" id="quantity1" name="quantity1" min="1" max="10">
+
+  <a href="#">Remove from cart</a>
+   </div>
+<div>
+  <h4>
+    Total
+  </h4>
+  <h2>
+    $2,100.00
+  </h2>
+</div>
+  </div>
+</section>
+
+
+   
+
+    <script src="../js/scripts-min.js"></script>
+  </body>
+</html>
