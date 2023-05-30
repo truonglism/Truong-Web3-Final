@@ -324,7 +324,11 @@ template {
 ============= */
 body {
   background-color: lightblue;
-  background-image: url("img/main.jpg");
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* =============
@@ -361,6 +365,82 @@ textarea {
 /* =============
     Header
 ============= */
+.header {
+  color: white;
+}
+.header .container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+@media (min-width: 576px) {
+  .header .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+  .header .container h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    align-self: center;
+  }
+  .header .container p {
+    color: #000;
+    font-size: 12;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+  .header .container .arrow ul {
+    display: flex;
+  }
+}
+@media (min-width: 576px) {
+  .header {
+    height: 100vh;
+    background-image: url("../img/mainmo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    height: 100vh;
+    background-image: url("../img/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 /* =============
     Footer
+============= */
+/* =============
+    Typography
+============= */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* =============
+Lineup
+============= */
+/* =============
+    mainpage
+============= */
+@media (min-width: 576px) {
+  .container h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    align-self: center;
+  }
+}
+
+/* =============
+   passess
+============= */
+/* =============
+   Subcribe 
 ============= */

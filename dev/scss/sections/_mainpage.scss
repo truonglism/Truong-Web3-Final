@@ -1,0 +1,15 @@
+/* =============
+    mainpage
+============= */
+
+.container{
+    @include sm{
+    h1{
+        font-size: 35px;
+        margin-bottom: 10px;
+        font-weight:700;
+        align-self: center;
+    }
+
+    }
+}
