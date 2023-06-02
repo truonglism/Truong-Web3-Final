@@ -3,60 +3,100 @@
 ============= */
 
 .header{
-
     color: white;
+    background-image: url("../img/main.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+.about{
+    
+    text-align: right;
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    margin-left: 300px;
+}
+.contact{
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 300px;
+    margin-bottom:100px;
+
+}
+.logo{
+    border:none;
+}
+.title{
+    text-decoration: none;
+    font-weight: 600;
+    margin-top:350px;
+   font-size: 35px;
+   text-align: center;
    
-    .container{
+    
+}
+.info{
+    font-weight: 500;
+    margin-top:350px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas:
+    ". content ."
+    ;
+
+    @include sm{
+
+       
         display:grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas:
-        ". content ."
-        ;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 100px;
 
-        @include sm{
-           
-            display:grid;
-            grid-template-columns: 1fr;
-            padding: 1em;
-            grid-row-gap: 100px;
-
-            h1{
-                font-size: 35px;
-                margin-bottom: 10px;
-                font-weight:700;
-                align-self: center;
-            }
-            p{
-                color: $black;
-                font-size:12;
-                margin-bottom: 10px;
-                align-self: center;
-    
-            }
-            .arrow{
-            ul{
-                display: flex;
-                
-            }
+        h1{
+            font-size: 35px;
+            margin-bottom: 10px;
+            font-weight:700;
+            align-self: center;
         }
+        p{
+            color: $black;
+            font-size:12;
+            margin-bottom: 10px;
+            align-self: center;
+
         }
-    
-}
-
-@include sm{
-    height:100vh;
-    background-image: url('../img/mainmo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-    @include lg{
-        height:100vh;
-    
-    background-image: url('../img/main.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+        .arrow{
+        ul{
+            display: flex;
+            
+        }
+    }
     }
 
- 
 }
+
+
+
+@include lg{
+    height:100vh;
+
+background-image: url('../img/main.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
+   
+
+}
+

@@ -367,6 +367,43 @@ textarea {
 ============= */
 .header {
   color: white;
+  background-image: url("../img/main.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.header .about {
+  text-align: right;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-left: 300px;
+}
+.header .contact {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 300px;
+  margin-bottom: 100px;
+}
+.header .logo {
+  border: none;
+}
+.header .title {
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 350px;
+  font-size: 35px;
+  text-align: center;
+}
+.header .info {
+  font-weight: 500;
+  margin-top: 350px;
+  font-size: 16px;
+  text-align: center;
 }
 .header .container {
   display: grid;
@@ -396,14 +433,6 @@ textarea {
     display: flex;
   }
 }
-@media (min-width: 576px) {
-  .header {
-    height: 100vh;
-    background-image: url("../img/mainmo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
 @media (min-width: 992px) {
   .header {
     height: 100vh;
@@ -417,10 +446,55 @@ textarea {
     Footer
 ============= */
 /* =============
-    Typography
+    explain
 ============= */
-body {
-  font-family: "Roboto", sans-serif;
+explain {
+  background-image: url("../img/main2.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+explain .title2 {
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 350px;
+  font-size: 35px;
+  text-align: center;
+}
+explain .container {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". content .";
+}
+@media (min-width: 576px) {
+  explain .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+  explain .container h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    align-self: center;
+  }
+  explain .container p {
+    color: #000;
+    font-size: 12;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+}
+@media (min-width: 992px) {
+  explain {
+    height: 100vh;
+    background-image: url("../img/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 /* =============

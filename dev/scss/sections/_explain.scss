@@ -1,6 +1,73 @@
 /* =============
-    Typography
+    explain
 ============= */
-body{
-    font-family: 'Roboto', sans-serif;
-}
+
+explain{
+    background-image: url("../img/main2.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .title2{
+        text-decoration: none;
+        font-weight: 600;
+        margin-top:350px;
+       font-size: 35px;
+       text-align: center;
+       
+        
+    }
+
+
+
+    .container{
+        display:grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas:
+        ". content ."
+        ;
+    
+        @include sm{
+    
+           
+            display:grid;
+            grid-template-columns: 1fr;
+            padding: 1em;
+            grid-row-gap: 100px;
+    
+            h1{
+                font-size: 35px;
+                margin-bottom: 10px;
+                font-weight:700;
+                align-self: center;
+            }
+            p{
+                color: $black;
+                font-size:12;
+                margin-bottom: 10px;
+                align-self: center;
+    
+            }
+      
+        }
+    
+    }
+    
+    
+    
+    @include lg{
+        height:100vh;
+    
+    background-image: url('../img/main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    
+    
+       
+    
+    }
+
+
