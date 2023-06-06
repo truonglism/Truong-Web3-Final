@@ -1,3 +1,16 @@
 /* =============
    passess
 ============= */
+
+.passes-column{
+   display: grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+    ". . ."
+    "ga vip club"
+    ". . ."
+    ;
+
+}

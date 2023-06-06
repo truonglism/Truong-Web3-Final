@@ -374,64 +374,21 @@ textarea {
   background-repeat: no-repeat;
   position: relative;
 }
+.header .info {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
 .header .about {
-  text-align: right;
   text-decoration: none;
   color: white;
-  font-size: 18px;
-  margin-left: 300px;
+  font-size: 18pt;
 }
 .header .contact {
-  font-size: 18px;
+  font-size: 18pt;
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  margin-left: 300px;
-  margin-bottom: 100px;
-}
-.header .logo {
-  border: none;
-}
-.header .title {
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 350px;
-  font-size: 35px;
-  text-align: center;
-}
-.header .info {
-  font-weight: 500;
-  margin-top: 350px;
-  font-size: 16px;
-  text-align: center;
-}
-.header .container {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". content .";
-}
-@media (min-width: 576px) {
-  .header .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 1em;
-    grid-row-gap: 100px;
-  }
-  .header .container h1 {
-    font-size: 35px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    align-self: center;
-  }
-  .header .container p {
-    color: #000;
-    font-size: 12;
-    margin-bottom: 10px;
-    align-self: center;
-  }
-  .header .container .arrow ul {
-    display: flex;
-  }
+  font-size: 18pt;
 }
 @media (min-width: 992px) {
   .header {
@@ -442,13 +399,39 @@ textarea {
   }
 }
 
+.header-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 70% 10% 10%;
+  grid-template-areas: "logo-column . about-column" ". title-column ." "info-column info-column info-column" "date-column . contact-column";
+}
+.header-grid .logo-column {
+  grid-area: logo-column;
+}
+.header-grid .about-column {
+  grid-area: about-column;
+}
+.header-grid .title-column {
+  grid-area: title-column;
+}
+.header-grid .date-column {
+  grid-area: date-column;
+}
+.header-grid .info-column {
+  grid-area: info-column;
+}
+.header-grid .contact-column {
+  grid-area: contact-column;
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     explain
 ============= */
-explain {
+.explain {
   background-image: url("../img/main2.jpg");
   height: 100vh;
   width: 100vw;
@@ -456,65 +439,116 @@ explain {
   background-repeat: no-repeat;
   position: relative;
 }
-explain .title2 {
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 350px;
-  font-size: 35px;
-  text-align: center;
-}
-explain .container {
+
+.explain-grid {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". content .";
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  grid-template-areas: ". . ." "title2-column title2-column ." "info2-column info2-column info2-column";
 }
-@media (min-width: 576px) {
-  explain .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 1em;
-    grid-row-gap: 100px;
-  }
-  explain .container h1 {
-    font-size: 35px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    align-self: center;
-  }
-  explain .container p {
-    color: #000;
-    font-size: 12;
-    margin-bottom: 10px;
-    align-self: center;
-  }
+.explain-grid .subhead2 {
+  grid-area: title2-column;
 }
-@media (min-width: 992px) {
-  explain {
-    height: 100vh;
-    background-image: url("../img/main.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+.explain-grid .title2-column {
+  grid-area: title2-column;
+}
+.explain-grid .info2-column {
+  grid-area: info2-column;
+}
+.explain-grid .title2 {
+  margin-top: 120px;
+  color: #565555;
+  font-size: 70px;
+}
+.explain-grid .subhead2 {
+  color: black;
+  font-size: 30px;
+}
+.explain-grid .info2 {
+  margin-top: 120px;
+  text-align: center;
+  color: black;
+  font-size: 17px;
 }
 
 /* =============
 Lineup
 ============= */
-/* =============
-    mainpage
-============= */
-@media (min-width: 576px) {
-  .container h1 {
-    font-size: 35px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    align-self: center;
+.lineup {
+  background-image: url("../img/main3.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.lineup .lineup-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 33.3% 33.3% 33.3%;
+}
+@media (min-width: 992px) {
+  .lineup .lineup-grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 35% 35% 35% 35%;
+    grid-template-areas: ". img-1 img-2 img-3" "info3-column img-4 img-5 img-6" ". img-7 img-8 img-9";
+  }
+  .lineup .lineup-grid .check {
+    grid-area: info3-column;
+  }
+  .lineup .lineup-grid .learn {
+    grid-area: info3-column;
+  }
+  .lineup .lineup-grid .red {
+    grid-area: infor3-column;
+  }
+  .lineup .lineup-grid ul li.img-1 {
+    grid-area: img-1;
+  }
+  .lineup .lineup-grid ul li.img-2 {
+    grid-area: img-2;
+  }
+  .lineup .lineup-grid ul li.img-3 {
+    grid-area: img-3;
+  }
+  .lineup .lineup-grid ul li.img-4 {
+    grid-area: img-4;
+  }
+  .lineup .lineup-grid ul li.img-5 {
+    grid-area: img-5;
+  }
+  .lineup .lineup-grid ul li.img-6 {
+    grid-area: img-6;
+  }
+  .lineup .lineup-grid ul li.img-7 {
+    grid-area: img-7;
+  }
+  .lineup .lineup-grid ul li.img-8 {
+    grid-area: img-8;
+  }
+  .lineup .lineup-grid ul li.img-9 {
+    grid-area: img-9;
   }
 }
 
 /* =============
+    mainpage
+============= */
+/* =============
    passess
 ============= */
+.passes-column {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: ". . ." "ga vip club" ". . .";
+}
+
 /* =============
    Subcribe 
 ============= */

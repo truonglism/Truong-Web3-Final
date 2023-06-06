@@ -2,72 +2,64 @@
     explain
 ============= */
 
-explain{
+.explain{
     background-image: url("../img/main2.jpg");
     height: 100vh;
     width: 100vw;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     position: relative;
 
+}
+
+
+
+
+.explain-grid{
+   
+
+  
+    display: grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-areas: 
+    '. . .'
+    'title2-column title2-column .'
+    'info2-column info2-column info2-column'
+    ;
+
+ 
+    .subhead2{
+        grid-area: title2-column;
+    }
+    .title2-column{
+        grid-area:title2-column;
+    }
+
+    .info2-column{
+        grid-area: info2-column;
+    }
+
     .title2{
-        text-decoration: none;
-        font-weight: 600;
-        margin-top:350px;
-       font-size: 35px;
-       text-align: center;
+        margin-top: 120px;
+        color:$grey;
+        font-size: 70px;
+    
+    }
+
+    .subhead2{
+        color: black;
+        font-size: 30px;
        
-        
     }
+    .info2{
+        margin-top: 120px;
+        text-align: center;
+        color: black;
+        font-size: 17px;
 
-
-
-    .container{
-        display:grid;
-        grid-template-columns: 16px auto 16px;
-        grid-template-areas:
-        ". content ."
-        ;
-    
-        @include sm{
-    
-           
-            display:grid;
-            grid-template-columns: 1fr;
-            padding: 1em;
-            grid-row-gap: 100px;
-    
-            h1{
-                font-size: 35px;
-                margin-bottom: 10px;
-                font-weight:700;
-                align-self: center;
-            }
-            p{
-                color: $black;
-                font-size:12;
-                margin-bottom: 10px;
-                align-self: center;
-    
-            }
-      
-        }
-    
     }
     
-    
-    
-    @include lg{
-        height:100vh;
-    
-    background-image: url('../img/main.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    }
-    
-    
-       
-    
-    }
 
-
+}

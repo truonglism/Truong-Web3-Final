@@ -2,3 +2,91 @@
 Lineup
 ============= */
 
+.lineup{
+    background-image: url("../img/main3.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+  
+
+
+
+.lineup-grid{
+    
+    display:grid;
+    height:100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+ 
+
+@include lg{
+display: grid;
+height:100vh;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 35% 35% 35% 35%;
+grid-template-areas: 
+'. img-1 img-2 img-3'
+'info3-column img-4 img-5 img-6'
+'. img-7 img-8 img-9'
+;
+
+.check{
+    grid-area:info3-column;
+}
+
+.learn{
+    grid-area:info3-column;
+}
+.red{
+    grid-area:infor3-column;
+}
+
+ul{
+  
+   
+    li{
+
+    &.img-1{
+        grid-area:img-1;
+
+    }
+    &.img-2{
+        grid-area:img-2;
+        
+    }
+    &.img-3{
+        grid-area:img-3;
+        
+    }
+    &.img-4{
+        grid-area:img-4;
+        
+    }
+    &.img-5{
+        grid-area:img-5;
+        
+    }
+    &.img-6{
+        grid-area:img-6;
+        
+    }
+    &.img-7{
+        grid-area:img-7;
+        
+    }
+    &.img-8{
+        grid-area:img-8;
+        
+    }
+    &.img-9{
+        grid-area:img-9;
+    
+    }
+}
+}
+}
+}
+}
