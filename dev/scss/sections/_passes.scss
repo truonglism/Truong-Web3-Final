@@ -3,6 +3,14 @@
 ============= */
 
 .passes-column{
+   height:100vh;
+
+   background-image: url('../img/passes.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   @include lg{
+   
    display: grid;
     height:100vh;
     grid-template-columns: 1fr 1fr 1fr;
@@ -12,5 +20,51 @@
     "ga vip club"
     ". . ."
     ;
+    a{
+     margin-top:80px;
+   }
+   }
+}
+
+.passes{
+
+ 
+
+.ga{
+
+   height: 80vh;
+   background-color:$ga ;
+   color: white;
+   padding: 55px;
+   margin: 40px 22px 50px 22px;
+}
+.vip{
+
+   height: 80vh;
+   background-color: $vip;
+   color:white;
+   padding: 55px;
+   margin: 40px 22px 50px 0;
+}
+.club{
+
+   height: 80vh;
+   background-color: $club;
+   color: white;
+   padding: 55px;
+   margin: 40px 22px 50px 0;
+}
+a{
+   color: $blood;
+   background-color: $white;
+   padding: 10px 20px 10px 20px;
+   text-decoration: none;
+   text-align: center;
+   font-weight: 500;
+   border: 5px solid $blood;
+   border-radius: 31px;
+  
+}
+   
 
 }

@@ -331,6 +331,11 @@ ul {
   padding-left: 0;
 }
 
+.buy {
+  text-decoration: none;
+  background-color: #BF1A1A;
+}
+
 /* =============
     Typography
 ============= */
@@ -373,22 +378,7 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-}
-.header .info {
-  text-align: center;
-  color: white;
-  font-size: 17px;
-}
-.header .about {
-  text-decoration: none;
-  color: white;
-  font-size: 18pt;
-}
-.header .contact {
-  font-size: 18pt;
-  color: white;
-  text-decoration: none;
-  font-size: 18pt;
+  padding-top: 40px;
 }
 @media (min-width: 992px) {
   .header {
@@ -397,31 +387,65 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .header .title {
+    font-size: 100px;
+    font-weight: 700;
+    align-text: center;
+    margin-left: 130px;
+    margin-top: 350px;
+  }
+  .header .info {
+    color: black;
+    align-self: center;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+  .header .contact {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-left: 60px;
+  }
+  .header .contact .logo {
+    margin-left: 60px;
+  }
+  .header .about {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+  .header .date {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-left: 60px;
+  }
 }
-
-.header-grid {
+.header .header-grid {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 15% 70% 15%;
   grid-template-rows: 10% 70% 10% 10%;
-  grid-template-areas: "logo-column . about-column" ". title-column ." "info-column info-column info-column" "date-column . contact-column";
+  grid-template-areas: "logo-column . about-column" ". title-column ." ". info-column ." "date-column . contact-column";
 }
-.header-grid .logo-column {
+.header .header-grid .logo-column {
   grid-area: logo-column;
 }
-.header-grid .about-column {
+.header .header-grid .about-column {
   grid-area: about-column;
 }
-.header-grid .title-column {
+.header .header-grid .title-column {
   grid-area: title-column;
 }
-.header-grid .date-column {
+.header .header-grid .date-column {
   grid-area: date-column;
 }
-.header-grid .info-column {
+.header .header-grid .info-column {
   grid-area: info-column;
 }
-.header-grid .contact-column {
+.header .header-grid .contact-column {
   grid-area: contact-column;
 }
 
@@ -494,8 +518,8 @@ Lineup
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 35% 35% 35% 35%;
-    grid-template-areas: ". img-1 img-2 img-3" "info3-column img-4 img-5 img-6" ". img-7 img-8 img-9";
+    grid-template-rows: 35% 35% 35%;
+    grid-template-areas: " . img-1 img-2 img-3" "info3-column img-4 img-5 img-6" " . img-7 img-8 img-9";
   }
   .lineup .lineup-grid .check {
     grid-area: info3-column;
@@ -542,13 +566,72 @@ Lineup
    passess
 ============= */
 .passes-column {
-  display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-areas: ". . ." "ga vip club" ". . .";
+  background-image: url("../img/passes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .passes-column {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: ". . ." "ga vip club" ". . .";
+  }
+  .passes-column a {
+    margin-top: 80px;
+  }
+}
+
+.passes .ga {
+  height: 80vh;
+  background-color: #A1A1A1;
+  color: white;
+  padding: 55px;
+  margin: 40px 22px 50px 22px;
+}
+.passes .vip {
+  height: 80vh;
+  background-color: #DE7132;
+  color: white;
+  padding: 55px;
+  margin: 40px 22px 50px 0;
+}
+.passes .club {
+  height: 80vh;
+  background-color: #29847B;
+  color: white;
+  padding: 55px;
+  margin: 40px 22px 50px 0;
+}
+.passes a {
+  color: #BF1A1A;
+  background-color: #fff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  border: 5px solid #BF1A1A;
+  border-radius: 31px;
 }
 
 /* =============
    Subcribe 
 ============= */
+.subcribe {
+  height: 100vh;
+  background-image: url("../img/fish.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+  .subcribe-grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: "";
+  }
+}

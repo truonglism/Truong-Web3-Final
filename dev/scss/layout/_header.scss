@@ -10,29 +10,39 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-
+    padding-top: 40px;
+  
     
 
-    .info{
-        text-align: center;
-        color: white;
-        font-size: 17px;
+//     .info{
+//         text-align: center;
+//         color: white;
+//         font-size: 17px;
 
-    }
-.about{
+//     }
+// .title{
+//     text-align: center;
+    
+// }
+// .date{
+//     color: $black;
+//     font-size: 18px;
+
+// }
+// .about{
   
-    text-decoration: none;
-    color:white;
-    font-size: 18pt;
+//     text-decoration: none;
+//     color:white;
+//     font-size: 18px;
    
-}
-.contact{
-    font-size: 18pt;
-    color:white;
-    text-decoration: none;
-    font-size: 18pt;
+// }
+// .contact{
+//     font-size: 18px;
+//     color:white;
+//     text-decoration: none;
+//     font-size: 18pt;
 
-}
+// }
 
 // }
 // .logo{
@@ -100,6 +110,43 @@
 background-image: url('../img/main.jpg');
 background-size: cover;
 background-repeat: no-repeat;
+
+.title{
+    font-size: 100px;
+    font-weight: 700;
+    align-text: center;
+    margin-left: 130px;
+    margin-top: 350px;
+   
+}
+.info{
+    color:black;
+    align-self: center;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.contact{
+    font-size: 20px;
+    font-weight: 500;
+    color:black;
+    margin-left:  60px;
+.logo{
+    margin-left:  60px;
+}
+   
+}
+.about{
+    font-size: 20px;
+    font-weight: 500;
+    color:black;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.date{
+    font-size: 20px;
+    font-weight: 500;
+    color:black;
+    margin-left:  60px;
 }
 
 
@@ -108,14 +155,15 @@ background-repeat: no-repeat;
 }
 
 .header-grid{
+    
     display: grid;
     height:100vh;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 15% 70% 15%;
     grid-template-rows: 10% 70% 10% 10%;
     grid-template-areas: 
     'logo-column . about-column'
     '. title-column .'
-    'info-column info-column info-column'
+    '. info-column .'
     'date-column . contact-column'
     ;
 
@@ -142,4 +190,5 @@ background-repeat: no-repeat;
     .contact-column{
         grid-area:contact-column;
     }
+}
 }

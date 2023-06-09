@@ -1,3 +1,23 @@
 /* =============
    Subcribe 
 ============= */
+
+.subcribe{
+  height:100vh;
+  background-image: url('../img/fish.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+
+
+.subcribe-grid{
+   @include lg{
+    display: grid;
+    height:100vh;
+    grid-template-columns:  10% 80% 10%;
+   grid-template-rows: 20% 60% 20%;
+    grid-template-areas: 
+    ""
+   }
+}

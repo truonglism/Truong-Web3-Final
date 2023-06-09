@@ -15,7 +15,7 @@ Lineup
 
 
 .lineup-grid{
-    
+
     display:grid;
     height:100vh;
     grid-template-columns: 1fr;
@@ -26,11 +26,11 @@ Lineup
 display: grid;
 height:100vh;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 35% 35% 35% 35%;
+grid-template-rows: 35% 35% 35%;
 grid-template-areas: 
-'. img-1 img-2 img-3'
+' . img-1 img-2 img-3'
 'info3-column img-4 img-5 img-6'
-'. img-7 img-8 img-9'
+' . img-7 img-8 img-9'
 ;
 
 .check{

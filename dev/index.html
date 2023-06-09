@@ -23,7 +23,7 @@
           <header class="header-grid">
               <div class="logo-column">
                 <form action="#">
-                <button><img class="logo" src="img/logo.svg" alt="logo"/></button>
+                <button class="logo"><img class="logo" src="img/logo.svg" alt="logo"/></button>
                 </form>
                 
               </div>
@@ -52,7 +52,7 @@
       
               
               <div class="contact-column">
-                <a class="contact" href="#">CONTACT</a>
+                <a class="contact" href="#">contact</a>
               </div>
       
           
@@ -89,17 +89,16 @@
  <!--StartPage3(artists)-->
 
  <section class="lineup">
-  <div class="lineup-grid">
+  <div>
+<ul class="lineup-grid">
 
-    <div class="info3-column">
+    <li class="info3-column">
       <h2 class="check"> Check them out</h2>
       <p class="learn"> Learn more about other artirsts by clicking on the red button</p>
       <form action="#">
         <button class="red"><img  src="img/redbutton.svg" alt="more"></button>
         </form> 
-    </div>
-
-  <ul>
+    </li>
 
     <li class="img-1">
        <img class="large-images" src="img/a1.jpg" alt="Artist1"> </li>
@@ -128,7 +127,6 @@
     <li class="img-9">
         <img class="large-images" src="img/a9.jpg" alt="Artist19"> </li>    
   </ul>
-
 </div>
 </section>
   <hr>
@@ -136,9 +134,9 @@
 
 <!--StartPage4(passes)-->
 <section class="passes">
-  <div class="passes-column">
+  <div>
 
-    <ul>
+    <ul class="passes-column">
       <!--2daysGA-->
       <li>
         <div class="ga">
@@ -153,7 +151,7 @@
                 General Admission (GA) includes One (1) 1 GA wristband good for entry to both Saturday & Sunday
                 <br>
                 *Quantities limited while supplies last</p>
-              <a href="#">BUY NOW</a>
+              <a class="buy" href="#">BUY NOW</a>
             </div>
         </div>
       </li>
@@ -175,7 +173,7 @@
           Dedicated VIP entry lanes
           Exclusive access to a VIP-dedicated location with select festival merchandise
           *Quantities limited while supplies last</p>
-        <a href="#">BUY NOW</a>
+        <a class="buy" href="#">BUY NOW</a>
       </div>
     </div>
     </li>
@@ -201,7 +199,7 @@
               <br>
               Deluxe bars with complimentary cocktail & beer tastings, rotating drink specials, guest mixologists & more (for 21+ guests only).
               </p>
-            <a href="#">BUY NOW</a>
+            <a class="buy" href="#">BUY NOW</a>
           </div>
       </div>
     </li>  
@@ -216,23 +214,24 @@
 <hr>
  <!--StartPage5(subcribe)-->
 <section class="subcribe">
+  
      <!--background image gonna be css. this is just for visual-->
- <img class="large-images" src="img/fish.jpg" alt="fish">
-<div>
+ <!-- <img class="large-images" src="img/fish.jpg" alt="fish"> -->
+ <ul class="subcribe-grid">
+  <li>
 
-    <h4> Subscribe us by providing your email address below: </h4>
-    <p>
+    <h4 class="subcribe"> Subscribe us by providing your email address below: </h4>
+    <p class="info4">
       By subscribing, you'll receive the latest updates, announcements, and exclusive content related to the Head in the Cloud Music Festival directly in your inbox. Don't miss out on the opportunity to stay connected with our vibrant music community.
     </p>
     <form action=“#”>
       <input type="text" placeholder="Email Address">
       <button>Sign Up</button>
     </form>
-</div>
+  </li>
 
-<!--Bottom page5-->
-<div>
-  <ul>
+<!--Bottom page4-->
+
     <li>
       <form action="#">
         <button><img src="img/up.svg" alt="up"></button>
@@ -247,7 +246,6 @@
 
 
   </ul> 
-</div>
 
 </section>
     <script src="js/scripts-min.js"></script>
