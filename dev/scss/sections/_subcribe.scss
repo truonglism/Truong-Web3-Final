@@ -18,6 +18,8 @@
     grid-template-columns:  10% 80% 10%;
    grid-template-rows: 20% 60% 20%;
     grid-template-areas: 
-    ""
+    'logo2-column . about'
+    '. subcribe-column .'
+    'date arrow-column contact'
    }
 }
