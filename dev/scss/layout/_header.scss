@@ -112,11 +112,14 @@ background-size: cover;
 background-repeat: no-repeat;
 
 .title{
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 700;
-    align-text: center;
-    margin-left: 130px;
+    text-align: center;
     margin-top: 350px;
+
+    @include xl{
+        font-size:100px;
+    }
    
 }
 .info{
