@@ -65,6 +65,18 @@ a{
    border-radius: 31px;
   
 }
+button{
+   
+      color: $blood;
+      background-color: $white;
+      padding: 10px 40px 10px 40px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 500;
+      border: 5px solid $blood;
+      border-radius: 31px;
+   
+}
 
 .ga, .vip, .club{
    display: flex;

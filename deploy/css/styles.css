@@ -368,8 +368,16 @@ textarea {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   padding-top: 40px;
+}
+.header .logo-column button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
 }
 @media (min-width: 992px) {
   .header {
@@ -522,6 +530,13 @@ Lineup
 .lineup .lineup-grid .info3-column {
   text-align: center;
 }
+.lineup .lineup-grid .info3-column button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
+}
 @media (min-width: 992px) {
   .lineup .lineup-grid {
     display: grid;
@@ -627,6 +642,16 @@ Lineup
   border: 5px solid #BF1A1A;
   border-radius: 31px;
 }
+.passes button {
+  color: #BF1A1A;
+  background-color: #fff;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  border: 5px solid #BF1A1A;
+  border-radius: 31px;
+}
 .passes .ga, .passes .vip, .passes .club {
   display: flex;
   flex-direction: column;
@@ -641,6 +666,7 @@ Lineup
    Subscribe 
 ============= */
 .subscribe {
+  padding-top: 40px;
   height: 100vh;
   background-image: url("../img/fish.jpg");
   background-size: cover;
@@ -649,8 +675,46 @@ Lineup
   color: #fff;
 }
 
+.subscribe-grid .logo-column {
+  grid-area: logo-column;
+  text-align: center;
+}
+.subscribe-grid .about-column {
+  grid-area: about-column;
+  text-align: center;
+}
+.subscribe-grid .logo-column button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
+}
 .subscribe-grid .subscribe-column {
+  margin-top: 100px;
   padding-bottom: 34px;
+}
+.subscribe-grid .subscribe-column input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-right: 30px;
+  border-radius: 31px;
+  background-color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border-color: white;
+  border-width: 2px;
+}
+.subscribe-grid .subscribe-column button {
+  color: #BF1A1A;
+  background-color: #fff;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  border: 5px solid #BF1A1A;
+  border-radius: 31px;
 }
 @media (min-width: 992px) {
   .subscribe-grid {
@@ -663,9 +727,12 @@ Lineup
 }
 .subscribe-grid h4 {
   font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 45px;
 }
 .subscribe-grid p {
   font-size: 22px;
+  margin-bottom: 45px;
 }
 .subscribe-grid .logo-column {
   grid-area: logo-column;
@@ -673,11 +740,24 @@ Lineup
 .subscribe-grid .about-column {
   grid-area: about-column;
 }
+.subscribe-grid .about-column a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin-top: 30px;
+}
 .subscribe-grid .subscribe-column {
   grid-area: subscribe-column;
 }
 .subscribe-grid .date-column {
   grid-area: date-column;
+}
+.subscribe-grid .date-column h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
 }
 .subscribe-grid .contact-column {
   grid-area: contact-column;
@@ -747,9 +827,12 @@ Lineup
 .thank-grid .thank-column h3 {
   font-size: 38.5px;
   text-decoration: none;
+  margin-bottom: 45px;
 }
 .thank-grid .thank-column p {
   font-size: 30px;
+  margin-bottom: 45px;
+  align-content: space-between;
 }
 .thank-grid .date-column {
   grid-area: date-column;
