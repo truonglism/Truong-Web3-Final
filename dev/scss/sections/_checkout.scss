@@ -76,7 +76,33 @@
         padding: 148px;
         border-radius: 8px;
 
-    }
+        input{
+            width: 50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          margin-right: 30px;
+          border-radius: 31px;
+          background-color: white;
+          font-weight: 500;
+          text-decoration: none;
+          border-color: white;
+          border-width: 2px;
+          }
+
+          a{
+            color: $blood;
+            background-color: $white;
+            padding: 10px 40px 10px 40px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 500;
+            border: 5px solid $blood;
+            border-radius: 31px;
+           
+         }
+          
+
+    }   
     // .order-column{
     //     padding: 16px 51px 16px 51px;
     //     background-color: white;
