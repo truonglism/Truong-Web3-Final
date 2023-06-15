@@ -322,18 +322,9 @@ template {
 /* =============
     Base
 ============= */
-body {
-  background-color: lightblue;
-}
-
 ul {
   list-style: none;
   padding-left: 0;
-}
-
-.buy {
-  text-decoration: none;
-  background-color: #BF1A1A;
 }
 
 /* =============
@@ -405,6 +396,7 @@ textarea {
     align-self: center;
     font-weight: 500;
     margin-top: 50px;
+    text-align: center;
   }
 }
 @media (min-width: 992px) {
@@ -496,10 +488,14 @@ textarea {
   margin-top: 120px;
   color: #565555;
   font-size: 70px;
+  margin-left: 40px;
+  margin-bottom: 0;
 }
 .explain-grid .subhead2 {
   color: black;
   font-size: 30px;
+  margin-left: 40px;
+  margin-top: 0;
 }
 .explain-grid .info2 {
   margin-top: 120px;
@@ -630,23 +626,86 @@ Lineup
   border: 5px solid #BF1A1A;
   border-radius: 31px;
 }
+.passes .ga, .passes .vip, .passes .club {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.passes .ga .buy-button, .passes .vip .buy-button, .passes .club .buy-button {
+  margin-top: auto;
+  text-align: center;
+}
 
 /* =============
-   Subcribe 
+   Subscribe 
 ============= */
-.subcribe {
+.subscribe {
   height: 100vh;
   background-image: url("../img/fish.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+@media (min-width: 992px) {
+  .subscribe-grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 10% 70% 10% 10%;
+    grid-template-areas: "logo-column . about-column" ". subscribe-column ." ". . ." "date-column . contact-column";
+  }
+}
+.subscribe-grid .logo-column {
+  grid-area: logo-column;
+}
+.subscribe-grid .about-column {
+  grid-area: about-column;
+}
+.subscribe-grid .subscribe-column {
+  grid-area: subscribe-column;
+}
+.subscribe-grid .date-column {
+  grid-area: date-column;
+}
+.subscribe-grid .contact-column {
+  grid-area: contact-column;
+}
+
+/* =============
+    mainpage
+============= */
+/* =============
+    thank out
+============= */
+.thank {
+  height: 100vh;
+  background-image: url("../img/thankout.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media (min-width: 992px) {
-  .subcribe-grid {
+  .thank-grid {
     display: grid;
     height: 100vh;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 20% 60% 20%;
-    grid-template-areas: "logo2-column . about" ". subcribe-column ." "date arrow-column contact";
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 10% 70% 10% 10%;
+    grid-template-areas: "logo-colum . about-column" ". thank-column ." ". . ." "date-column . contact-column";
   }
+}
+.thank-grid .logo-column {
+  grid-area: logo-column;
+}
+.thank-grid .about-column {
+  grid-area: about-column;
+}
+.thank-grid .thank-column {
+  grid-area: thank-column;
+}
+.thank-grid .date-column {
+  grid-area: date-column;
+}
+.thank-grid .contact-column {
+  grid-area: contact-column;
 }

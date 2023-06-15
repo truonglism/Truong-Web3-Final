@@ -1,25 +1,58 @@
 /* =============
-   Subcribe 
+   Subscribe 
 ============= */
 
-.subcribe{
+.subscribe{
+
   height:100vh;
   background-image: url('../img/fish.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right;
   }
 
 
 
-.subcribe-grid{
+.subscribe-grid{
    @include lg{
-    display: grid;
-    height:100vh;
-    grid-template-columns:  10% 80% 10%;
-   grid-template-rows: 20% 60% 20%;
-    grid-template-areas: 
-    'logo2-column . about'
-    '. subcribe-column .'
-    'date arrow-column contact'
+  display: grid;
+  height:100vh;
+  grid-template-columns:  15% 70% 15%;
+  grid-template-rows: 10% 70% 10% 10%;
+  grid-template-areas:
+  "logo-column . about-column"
+  ". subscribe-column ."
+  ". . ."
+  "date-column . contact-column";
    }
+
+  .logo-column{
+    grid-area:logo-column;
 }
+
+.about-column{
+    grid-area:about-column;
+}
+
+.subscribe-column{
+    grid-area:subscribe-column;
+}
+
+.date-column{
+    grid-area:date-column;
+}
+
+.contact-column{
+    grid-area:contact-column;
+}
+}
+
+
+  //   display: grid;
+  //   height:100vh;
+  //   grid-template-columns:  10% 80% 10%;
+  //  grid-template-rows: 20% 60% 20%;
+  //   grid-template-areas: 
+  //   'logo2-column . about'
+  //   '. subcribe-column .'
+  //   'date arrow-column contact'

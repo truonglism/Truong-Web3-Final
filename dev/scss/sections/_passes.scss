@@ -65,6 +65,17 @@ a{
    border-radius: 31px;
   
 }
+
+.ga, .vip, .club{
+   display: flex;
+   flex-direction: column;
+   align-content: space-between;
+
+   .buy-button{
+      margin-top:auto;
+      text-align: center;
+   }
+}
    
 
 }

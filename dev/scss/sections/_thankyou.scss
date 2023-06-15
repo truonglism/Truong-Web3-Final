@@ -1,0 +1,57 @@
+/* =============
+    thank out
+============= */
+
+.thank{
+    height:100vh;
+    background-image: url("../img/thankout.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// .subscribe{
+
+//     height:100vh;
+//     background-image: url('../img/fish.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: right;
+//     }
+  
+  
+  
+  .thank-grid{
+     @include lg{
+ 
+  
+    display: grid;
+    height:100vh;
+    grid-template-columns:  15% 70% 15%;
+    grid-template-rows: 10% 70% 10% 10%;
+    grid-template-areas:
+    "logo-colum . about-column"
+    ". thank-column ."
+    ". . ."
+    "date-column . contact-column";
+     }
+  
+     .logo-column{
+      grid-area:logo-column;
+  }
+  
+  .about-column{
+      grid-area:about-column;
+  }
+  
+  .thank-column{
+      grid-area:thank-column;
+  }
+  
+  .date-column{
+      grid-area:date-column;
+  }
+  
+  .contact-column{
+      grid-area:contact-column;
+  }
+  }
