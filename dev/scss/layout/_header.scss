@@ -23,95 +23,6 @@
         }
     }
 
-//     .info{
-//         text-align: center;
-//         color: white;
-//         font-size: 17px;
-
-//     }
-// .title{
-//     text-align: center;
-    
-// }
-// .date{
-//     color: $black;
-//     font-size: 18px;
-
-// }
-// .about{
-  
-//     text-decoration: none;
-//     color:white;
-//     font-size: 18px;
-   
-// }
-// .contact{
-//     font-size: 18px;
-//     color:white;
-//     text-decoration: none;
-//     font-size: 18pt;
-
-// }
-
-// }
-// .logo{
-//     border:none;
-// }
-// .title{
-//     text-decoration: none;
-//     font-weight: 600;
-//     margin-top:350px;
-//    font-size: 35px;
-//    text-align: center;
-   
-    
-// }
-// .info{
-//     font-weight: 500;
-//     margin-top:350px;
-//     font-size: 16px;
-//     text-align: center;
-// }
-
-// .container{
-//     display:grid;
-//     grid-template-columns: 16px auto 16px;
-//     grid-template-areas:
-//     ". content ."
-//     ;
-
-//     @include sm{
-
-       
-//         display:grid;
-//         grid-template-columns: 1fr;
-//         padding: 1em;
-//         grid-row-gap: 100px;
-
-//         h1{
-//             font-size: 35px;
-//             margin-bottom: 10px;
-//             font-weight:700;
-//             align-self: center;
-//         }
-//         p{
-//             color: $black;
-//             font-size:12;
-//             margin-bottom: 10px;
-//             align-self: center;
-
-//         }
-//         .arrow{
-//         ul{
-//             display: flex;
-            
-//         }
-//     }
-//     }
-
-// }
-
-
 
 @include lg{
     height:100vh;
@@ -145,11 +56,13 @@ background-position: center;
     color:black;
     // margin-left:  60px;
     text-align: left;
+}
 .logo{
     // margin-left:  60px;
 }
    
 }
+
 .about{
     font-size: 20px;
     font-weight: 500;
@@ -212,5 +125,4 @@ background-position: center;
         grid-area:contact-column;
         text-align: center;
     }
-}
 }

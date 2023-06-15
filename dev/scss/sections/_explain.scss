@@ -19,7 +19,7 @@
 .explain-grid{
    
 
-  
+  @include lg{
     display: grid;
     height:100vh;
     grid-template-columns: 1fr 1fr 1fr;
@@ -58,7 +58,7 @@
        
     }
     .info2{
-        margin-top: 120px;
+        margin-top: 200px;
         text-align: center;
         color: black;
         font-size: 17px;
@@ -66,4 +66,5 @@
     }
     
 
+}
 }

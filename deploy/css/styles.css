@@ -416,47 +416,44 @@ textarea {
     text-align: left;
   }
 }
-@media (min-width: 992px) {
-  .header .about {
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
-    margin-top: 30px;
-  }
+.header .about {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  margin-top: 30px;
 }
-@media (min-width: 992px) {
-  .header .date {
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
-  }
+.header .date {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
 }
-.header .header-grid {
+
+.header-grid {
   display: grid;
   height: 100vh;
   grid-template-columns: 15% 70% 15%;
   grid-template-rows: 10% 70% 10% 10%;
   grid-template-areas: "logo-column . about-column" ". title-column ." ". info-column ." "date-column . contact-column";
 }
-.header .header-grid .logo-column {
+.header-grid .logo-column {
   grid-area: logo-column;
   text-align: center;
 }
-.header .header-grid .about-column {
+.header-grid .about-column {
   grid-area: about-column;
   text-align: center;
 }
-.header .header-grid .title-column {
+.header-grid .title-column {
   grid-area: title-column;
 }
-.header .header-grid .date-column {
+.header-grid .date-column {
   text-align: center;
   grid-area: date-column;
 }
-.header .header-grid .info-column {
+.header-grid .info-column {
   grid-area: info-column;
 }
-.header .header-grid .contact-column {
+.header-grid .contact-column {
   grid-area: contact-column;
   text-align: center;
 }
@@ -477,40 +474,42 @@ textarea {
   background-position: center;
 }
 
-.explain-grid {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 33.3% 33.3% 33.3%;
-  grid-template-areas: ". . ." "title2-column title2-column ." "info2-column info2-column info2-column";
-}
-.explain-grid .subhead2 {
-  grid-area: title2-column;
-}
-.explain-grid .title2-column {
-  grid-area: title2-column;
-}
-.explain-grid .info2-column {
-  grid-area: info2-column;
-}
-.explain-grid .title2 {
-  margin-top: 120px;
-  color: #565555;
-  font-size: 70px;
-  margin-left: 40px;
-  margin-bottom: 0;
-}
-.explain-grid .subhead2 {
-  color: black;
-  font-size: 30px;
-  margin-left: 40px;
-  margin-top: 0;
-}
-.explain-grid .info2 {
-  margin-top: 120px;
-  text-align: center;
-  color: black;
-  font-size: 17px;
+@media (min-width: 992px) {
+  .explain-grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-areas: ". . ." "title2-column title2-column ." "info2-column info2-column info2-column";
+  }
+  .explain-grid .subhead2 {
+    grid-area: title2-column;
+  }
+  .explain-grid .title2-column {
+    grid-area: title2-column;
+  }
+  .explain-grid .info2-column {
+    grid-area: info2-column;
+  }
+  .explain-grid .title2 {
+    margin-top: 120px;
+    color: #565555;
+    font-size: 70px;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+  .explain-grid .subhead2 {
+    color: black;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 0;
+  }
+  .explain-grid .info2 {
+    margin-top: 200px;
+    text-align: center;
+    color: black;
+    font-size: 17px;
+  }
 }
 
 /* =============
@@ -762,6 +761,12 @@ Lineup
 .subscribe-grid .contact-column {
   grid-area: contact-column;
 }
+.subscribe-grid .contact-column a {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
 
 /* =============
     mainpage
@@ -771,6 +776,56 @@ Lineup
   background-image: url("../img/thankout.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.checkout-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 10% 80 .checkout-grid 10%;
+  grid-template-areas: "logo-column . about-column" "card-column card-column card-column" ". . ." "date-column . contact-column";
+}
+.checkout-grid .logo-column {
+  grid-area: logo-column;
+  text-align: center;
+}
+.checkout-grid .about-column {
+  grid-area: about-column;
+  text-align: center;
+}
+.checkout-grid .about-column a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  margin-top: 30px;
+}
+.checkout-grid .date-column {
+  text-align: center;
+  grid-area: date-column;
+}
+.checkout-grid .date-column h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+.checkout-grid .contact-column {
+  grid-area: contact-column;
+  text-align: center;
+}
+.checkout-grid .contact-column a {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+.checkout-grid .card-column {
+  display: inline-block;
+  grid-area: card-column;
+  background-color: white;
+  padding: 148px;
+  border-radius: 8px;
 }
 
 /* =============

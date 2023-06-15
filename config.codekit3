@@ -177,6 +177,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/checkout.jpg" : {
+      "ft" : 16384,
+      "iS" : 988667,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/checkout.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/d.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -380,6 +393,29 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/redbutton.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/redlogo.jpg" : {
+      "ft" : 16384,
+      "iS" : 4675,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/redlogo.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/redlogo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/redlogo.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
