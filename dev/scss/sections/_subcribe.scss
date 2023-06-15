@@ -9,11 +9,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  color: $white;
+
+  
+
   }
 
 
 
 .subscribe-grid{
+
+  .subscribe-column{
+   padding-bottom: 34px;
+  
+  }
+  
+ 
+
    @include lg{
   display: grid;
   height:100vh;
@@ -26,6 +38,13 @@
   "date-column . contact-column";
    }
 
+ h4{
+  font-size: 48px;
+ }
+ p{
+  font-size: 22px;
+ }
+
   .logo-column{
     grid-area:logo-column;
 }
@@ -36,6 +55,7 @@
 
 .subscribe-column{
     grid-area:subscribe-column;
+
 }
 
 .date-column{
@@ -45,8 +65,8 @@
 .contact-column{
     grid-area:contact-column;
 }
-}
 
+}
 
   //   display: grid;
   //   height:100vh;

@@ -10,14 +10,15 @@ Lineup
     background-repeat: no-repeat;
     position: relative;
 
-  
 
 .lineup-grid{
 
     display:grid;
     grid-template-columns: 1fr;
+    
     // height:100vh;
     // grid-template-columns: 1fr;
+
     .info3-column{
         text-align: center;
     }
@@ -82,6 +83,8 @@ grid-template-areas:
 }
 }
 }
+
+
 
 .img-4, .img-5, .img-6, .img-7, .img-8, .img-9{
     display:none;

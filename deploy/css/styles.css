@@ -377,6 +377,7 @@ textarea {
     background-image: url("../img/main.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .header .title {
     font-size: 80px;
@@ -404,10 +405,7 @@ textarea {
     font-size: 20px;
     font-weight: 500;
     color: black;
-    margin-left: 60px;
-  }
-  .header .contact .logo {
-    margin-left: 60px;
+    text-align: left;
   }
 }
 @media (min-width: 992px) {
@@ -416,7 +414,6 @@ textarea {
     font-weight: 500;
     color: black;
     margin-top: 30px;
-    margin-left: 60px;
   }
 }
 @media (min-width: 992px) {
@@ -424,7 +421,6 @@ textarea {
     font-size: 20px;
     font-weight: 500;
     color: black;
-    margin-left: 60px;
   }
 }
 .header .header-grid {
@@ -436,14 +432,17 @@ textarea {
 }
 .header .header-grid .logo-column {
   grid-area: logo-column;
+  text-align: center;
 }
 .header .header-grid .about-column {
   grid-area: about-column;
+  text-align: center;
 }
 .header .header-grid .title-column {
   grid-area: title-column;
 }
 .header .header-grid .date-column {
+  text-align: center;
   grid-area: date-column;
 }
 .header .header-grid .info-column {
@@ -451,6 +450,7 @@ textarea {
 }
 .header .header-grid .contact-column {
   grid-area: contact-column;
+  text-align: center;
 }
 
 /* =============
@@ -466,6 +466,7 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-position: center;
 }
 
 .explain-grid {
@@ -619,7 +620,7 @@ Lineup
 .passes a {
   color: #BF1A1A;
   background-color: #fff;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 40px 10px 40px;
   text-decoration: none;
   text-align: center;
   font-weight: 500;
@@ -645,8 +646,12 @@ Lineup
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  color: #fff;
 }
 
+.subscribe-grid .subscribe-column {
+  padding-bottom: 34px;
+}
 @media (min-width: 992px) {
   .subscribe-grid {
     display: grid;
@@ -655,6 +660,12 @@ Lineup
     grid-template-rows: 10% 70% 10% 10%;
     grid-template-areas: "logo-column . about-column" ". subscribe-column ." ". . ." "date-column . contact-column";
   }
+}
+.subscribe-grid h4 {
+  font-size: 48px;
+}
+.subscribe-grid p {
+  font-size: 22px;
 }
 .subscribe-grid .logo-column {
   grid-area: logo-column;
@@ -675,6 +686,13 @@ Lineup
 /* =============
     mainpage
 ============= */
+.checkout {
+  height: 100vh;
+  background-image: url("../img/thankout.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* =============
     thank out
 ============= */
@@ -685,13 +703,25 @@ Lineup
   background-repeat: no-repeat;
 }
 
+.thank-grid .logo-column {
+  text-align: center;
+}
+.thank-grid .about-column {
+  text-align: center;
+}
+.thank-grid .date-column {
+  text-align: center;
+}
+.thank-grid .contact-column {
+  text-align: center;
+}
 @media (min-width: 992px) {
   .thank-grid {
     display: grid;
     height: 100vh;
     grid-template-columns: 15% 70% 15%;
     grid-template-rows: 10% 70% 10% 10%;
-    grid-template-areas: "logo-colum . about-column" ". thank-column ." ". . ." "date-column . contact-column";
+    grid-template-areas: "logo-column . about-column" ". thank-column ." ". . ." "date-column . contact-column";
   }
 }
 .thank-grid .logo-column {
@@ -702,6 +732,24 @@ Lineup
 }
 .thank-grid .thank-column {
   grid-area: thank-column;
+  margin-top: 200px;
+}
+.thank-grid .thank-column a {
+  color: #BF1A1A;
+  background-color: #fff;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  border: 5px solid #BF1A1A;
+  border-radius: 31px;
+}
+.thank-grid .thank-column h3 {
+  font-size: 38.5px;
+  text-decoration: none;
+}
+.thank-grid .thank-column p {
+  font-size: 30px;
 }
 .thank-grid .date-column {
   grid-area: date-column;

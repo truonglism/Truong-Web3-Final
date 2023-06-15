@@ -7,6 +7,8 @@
     background-image: url("../img/thankout.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    
 }
 
 // .subscribe{
@@ -21,6 +23,25 @@
   
   
   .thank-grid{
+
+    .logo-column{
+        text-align: center;
+    }
+    .about-column{
+        text-align: center;
+    }
+    .date-column{
+        text-align: center;
+    }
+
+  .contact-column{
+    text-align: center; 
+    }
+
+
+
+
+
      @include lg{
  
   
@@ -29,13 +50,13 @@
     grid-template-columns:  15% 70% 15%;
     grid-template-rows: 10% 70% 10% 10%;
     grid-template-areas:
-    "logo-colum . about-column"
+    "logo-column . about-column"
     ". thank-column ."
     ". . ."
     "date-column . contact-column";
      }
   
-     .logo-column{
+.logo-column{
       grid-area:logo-column;
   }
   
@@ -45,6 +66,29 @@
   
   .thank-column{
       grid-area:thank-column;
+      margin-top: 200px;
+     
+    
+      a{
+        
+        color: $blood;
+        background-color: $white;
+        padding: 10px 40px 10px 40px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+        border: 5px solid $blood;
+        border-radius: 31px;
+       
+     }
+   
+    h3{
+        font-size: 38.5px;
+        text-decoration: none;
+    }
+    p{
+        font-size: 30px;
+    }
   }
   
   .date-column{
